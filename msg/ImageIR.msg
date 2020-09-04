@@ -11,4 +11,4 @@ std_msgs/Header header  # Header timestamp should be acquisition time of image
 uint8 height # rows
 uint8 width  # columns
 
-uint16[] data # actual matrix data, size is (height * width)
+float32[] data # actual matrix data, size is (height * width)
