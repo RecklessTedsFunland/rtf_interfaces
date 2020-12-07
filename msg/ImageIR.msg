@@ -8,7 +8,7 @@ std_msgs/Header header  # Header timestamp should be acquisition time of image
                         # message associated with the image conflict
                         # the behavior is undefined
 
-uint8 height # rows
-uint8 width  # columns
+uint16 height # rows
+uint16 width  # columns
 
 float32[] data # actual matrix data, size is (height * width)

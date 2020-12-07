@@ -1,6 +1,14 @@
 # Reckless Ted's Fundland Interfaces (rtf_interfaces)
 
 - ImageIR (mlx90640)
+    - uint16 image width and height
+    - float32[] data
+- Top
+    - float32[] cpu: [core0, core1, ...]
+    - float32[] memory: [used, max]
+    - float32[] disk: [used, max]
+    - string hostname
+    - string ipv4
 
 ## To Build
 
@@ -24,8 +32,8 @@ std_msgs/Header header  # Header timestamp should be acquisition time of image
                         # message associated with the image conflict
                         # the behavior is undefined
 
-uint8 height # rows
-uint8 width  # columns
+uint16 height # rows
+uint16 width  # columns
 
 float32[] data # actual matrix data, size is (height * width)
 
