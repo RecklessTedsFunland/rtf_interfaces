@@ -12,16 +12,16 @@
 
 ## To Build
 
-```
+```bash
 git clone https://github.com/RecklessTedsFunland/rtf_interfaces.git
 colcon build --symlink-install --packages-select rtf_interfaces
-source install/setup.bash
+source install/setup.zsh
 ```
 
 Double check it worked:
 
-```
-kevin@dalek workspace % ros2 interface show rtf_interfaces/msg/ImageIR
+```bash
+>>> ros2 interface show rtf_interfaces/msg/ImageIR
 std_msgs/Header header  # Header timestamp should be acquisition time of image
                         # Header frame_id should be optical frame of camera
                         # origin of frame should be optical center of camera
@@ -36,5 +36,4 @@ uint16 height # rows
 uint16 width  # columns
 
 float32[] data # actual matrix data, size is (height * width)
-
 ```
