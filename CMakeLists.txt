@@ -26,6 +26,9 @@ find_package(std_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ImageIR.msg"
   "msg/Top.msg"
+  # "msg/Disk.msg"
+  # msg/Memory.msg
+  # msg/CpuMemory.msg
   DEPENDENCIES std_msgs
   # DEPENDENCIES builtin_interfaces std_msgs
 )
