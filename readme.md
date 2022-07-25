@@ -15,7 +15,7 @@
 ```bash
 git clone https://github.com/RecklessTedsFunland/rtf_interfaces.git
 colcon build --symlink-install --packages-select rtf_interfaces
-source install/setup.zsh
+. install/setup.zsh
 ```
 
 Double check it worked:
