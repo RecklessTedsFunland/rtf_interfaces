@@ -1,21 +1,31 @@
-# Reckless Ted's Fundland Interfaces (rtf_interfaces)
+# Reckless Ted's Fundland Interfaces (`rtf_interfaces`)
 
-- ImageIR (mlx90640)
+- `ImageIR` (mlx90640)
     - uint16 image width and height
     - float32[] data
-- Top
-    - float32[] cpu: [core0, core1, ...]
-    - float32[] memory: [used, max]
-    - float32[] disk: [used, max]
-    - string hostname
-    - string ipv4
+- Performance
+    - `Top`
+        - float32[] cpu: [core0, core1, ...]
+        - float32[] memory: [used, max]
+        - float32[] disk: [used, max]
+        - string hostname
+        - string ipv4
+    - `Memory`
+    - `Disk`
+    - `CpuMemory`
+- GPS
+    - `GPGGA`
+    - `GPGSA`
+    - `GPGST`
+    - `GPRMC`
+    - `NemaSentence`
 
 ## To Build
 
 ```bash
 git clone https://github.com/RecklessTedsFunland/rtf_interfaces.git
-colcon build --symlink-install --packages-select rtf_interfaces
-. install/setup.zsh
+colcon build --packages-select rtf_interfaces
+. install/setup.bash
 ```
 
 Double check it worked:

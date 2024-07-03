@@ -3,7 +3,7 @@
 <package format="3">
     <name>rtf_interfaces</name>
     <version>0.0.0</version>
-    <description>TODO: Package description</description>
+    <description>RTF messages</description>
     <maintainer email="walchko@users.noreply.github.com">kevin</maintainer>
     <license>MIT</license>
 

@@ -24,12 +24,22 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/ImageIR.msg"
-  "msg/Top.msg"
-  "msg/Disk.msg"
-  msg/Memory.msg
-  msg/CpuMemory.msg
+  "msgs/ImageIR.msg"
+  "msgs/Top.msg"
+  "msgs/Disk.msg"
+  msgs/Memory.msg
+  msgs/CpuMemory.msg
+  "msgs/NemaSentence.msg"
+  "msgs/Gpgga.msg"
+  "msgs/Gpgsa.msg"
+  "msgs/Gpgst.msg"
+#    "msgs/Gpgsv.msg"
+#    "msgs/GpgsvSatellite.msg"
+  "msgs/Gprmc.msg"
+#    "msgs/Gpvtg.msg"
+#    "msgs/Gpzda.msg"
   DEPENDENCIES std_msgs
+#   DEPENDENCIES std_msgs
   # DEPENDENCIES builtin_interfaces std_msgs
 )
 
